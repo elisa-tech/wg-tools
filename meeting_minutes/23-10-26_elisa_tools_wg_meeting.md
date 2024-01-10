@@ -108,7 +108,7 @@
 ## Action Items
 
 * [] Matt: Bring up engagement (present to vertical groups? blog post? presenting November summary meeting) at the TSC
-* [] Matt: Create prosposal for broader WG mission statement
+* [] Matt: Create proposal for broader WG mission statement
 * [] Matt: Model wg-tools README.md after wg-automative to educate newcomers quickly
 * [] Matt: Contact Sudip/Lukas to pull together documentation on patch submission
 * [] Qasim: Explore the open source static analysis tools

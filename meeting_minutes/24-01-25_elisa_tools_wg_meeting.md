@@ -90,39 +90,38 @@
 ## Discussion Notes
 
 * ks-nav topics
-  * Comparison to CAS tool
+  * Topic: Comparison to CAS tool
     * CAS
       * Software suite for large source code maintance, offers two twos for generating metainfo
       * build-related info and source code-related
-    * Dependency
-      * Python, LLVM, RapidJson
-    * Input
-      * Any source tree
-    * Two main tools
-      * BAS (spying on the build)
-      * FTDB (parsing the source code)
-        * Extracts function data, function names
-        * Puts the data into a document database
-      * Compilers and build tools, source files used, makefiles use, build times statistics
-      * Function and types
-      * Function signatures, return types, and variables
-      * Call relations
-      * Preprocessor relation information
+      * Dependencies
+        * Python, LLVM, RapidJson
+      * Takes any source tree as input
+      * Two main tools
+        * BAS (spying on the build)
+        * FTDB (parsing the source code)
+          * Extracts function data, function names
+          * Puts the data into a document database
+        * Compilers and build tools, source files used, makefiles use, build times statistics
+        * Function and types
+        * Function signatures, return types, and variables
+        * Call relations
+        * Preprocessor relation information
     * ks-nav is specific for the kernel
       * kern_bin_db, nav, nav-web
-    * Are there an features we should implement that you saw in CAS?
+    * MK: Are there an features we should implement that you saw in CAS?
       * Parsing the code with LLVM might be useful for trying to resolve indirect calls
       * The way they spy the build system is interesting but not sure the use for it here
     * Is ks-nav really linux kernel specific?
       * The architecture does not prevent you from using a different binary
-      * Some features (MAINTAINERS usage) wouldn't work
+      * Some features (MAINTAINERS usage) are specific
       * ks-nav is not design to use with libraries
       * Most other builds would use libraries to some degree
     * Does it handle kernel modules?
       * Modules are not included in the analysis
-      * This is a similar but different problem
+      * This is a similar but different problem to indirect function calls
       * Modules are binaries and have no external dependencies
-  * funcParser features that were nice
+  * Topic: funcParser features that were nice
     * Ability to define "modules"
       * MK: I think this is covered by subsystems (though that is not as flexible but I think that's OK)
     * Sizing of functions
@@ -131,11 +130,11 @@
     * AC: Linux kernel source code is full of macros
       * Without preprocessing the line counts may be way off for func_parser
       * ks-nav working the result of the binary so it's accurate
-    * AC: Subsystem in ks-nav are taken from maintainers files but that is no flexible
-      * It does not assure that any given belongs to a single subsystem
+    * AC: Subsystem in ks-nav are taken from maintainers files but that is not flexible
+      * It does not assure that any given files belongs to a single subsystem
       * Some cases where same source file is applied to multiple subsystems
     * MK: Is there lots of files that aren't assigned to any subsystems?
-      * Subsystem called "the rest" which captures all those files that aren't capture elsewhere
+      * Subsystem called "the rest" which captures all those files that aren't captured elsewhere
       * MAINTAINERS isn't really designed to defined elements but rather to define who you must include on your patch submission
       * "The rest" gets addressed to Linus himself
     * RB: There are different notions of size
@@ -149,15 +148,15 @@
       * RB: Lots of aspects of the C langauge that can be implemented differently by different compilers
         * The code that is generated depends on these implementation defined details
         * If you want to track source -> object, you have to take into account implementation details
-        * Compilers cannot be trusted! Functional approves to safety usually qualify the compiler
-        * Aerospace does not require qualification of the compiler because it looks at object codel (SWL-A)
+        * Compilers cannot be trusted! Functional safety methods usually qualify the compiler
+        * Aerospace does not require qualification of the compiler because it looks at object code (SWL-A)
         * Same source can create many different executables (compiler with different settings for pre-defined macros)
         * For each translation unit, must track all specific compiler flags
     * AC: There is a correspondence with the source code
       * It relates bytes of code via the DWARF debug information
       * Using binutils for this currently (addr2line, etc.)
 * BASIL topics
-  * Meeting w/ Xen Project, need to select their quality management for cert
+  * Meeting w/ Xen Project, need to select their quality management tool for cert
   * On-going conversation w/ them, asking for some new features
   * Sharing with Xen what it can do for them
   * Submitted talk proposal for EOSS and DevConf

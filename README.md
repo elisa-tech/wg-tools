@@ -6,6 +6,10 @@ For more information, contact the working group chair, [Matt Kelly](mailto:matt.
 
 * [Meeting Minutes](meeting-minutes)
 
+## CodeChecker Instance
+
+[https://elisa-builder-00.iol.unh.edu:8001/](https://elisa-builder-00.iol.unh.edu:8001/)
+
 ## External Links
 
 * [ELISA Home](https://elisa.tech/)

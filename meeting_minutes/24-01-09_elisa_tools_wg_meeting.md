@@ -18,22 +18,22 @@
 
 ## Roll Call
 
+### Attended this meeting
+
 * Matt Kelly (Boeing)
 * Alessando Carminati (Red Hat)
 * Phillip Ahmann (Bosch)
 * Luigi  
 * Matt Weber (Boeing)
 * Thomas Mittlelstadt (Bosch)
-* Gabriele Paoloni 
+* Gabriele Paoloni (Red Hat)
 * Sudip (CodeThink)
 * Qasim (Seimens)
 
-### Attended this meeting
+### Attended in the past
 
 * Lukas Bulwahn
 * Shefali Sharma
-
-### Attended in the past
 
 ## Announcements
 
@@ -156,12 +156,6 @@
   * Sudip: May not be possible to get into OpenQA
     * Due to licensing rules
   * Don't need OpenQA since there is no graphical component
-* January WG Update
-  * Present & Solicit Feedback on the new WG Mission Statement
-  * Present adoption of tools (BASIL, ks-nav?) by Tools WG
-  * Discuss approaches to increasing engagement
-  * Discussion list of potential interesting topics
-  * Suggestions?
 
 ## Round Table
 

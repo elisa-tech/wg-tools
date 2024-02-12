@@ -26,10 +26,6 @@
 
 ### Attended in the past
 
-* Sudip (CodeThink)
-* Matt Kelly (Boeing)
-* Qasim (Seimens)
-
 ## Announcements
 
 ### Brief Notices

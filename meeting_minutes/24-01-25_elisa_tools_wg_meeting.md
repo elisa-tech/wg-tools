@@ -21,7 +21,7 @@
 ### Attended this meeting
 
 * Matt Kelly (Boeing)
-* Alessando Carminati (Red Hat)
+* Alessandro Carminati (Red Hat)
 * Luigi Pellecchia (Red Hat)
 * Shefali Sharma
 * Roberto Bagnara (Bugseng)
@@ -71,6 +71,7 @@
     * Do we (and if so how?) reconcile OSS coding standards with Certification coding standards
   * How can we contribute?
     * Contribute to clang-tidy / clang-format?
+* Runtime verification tools (Ivan Perez)
 * Kernel testing
   * Can we contribute to kernel testing in a systematic way?
   * Translating runtime test to kunit tests
@@ -91,6 +92,7 @@
 
 * ks-nav topics
   * Topic: Comparison to CAS tool
+    * Presentation [ks-nav_vs_cas](../presentations/ks-nav_vs_cas.pptx)
     * CAS
       * Software suite for large source code maintance, offers two twos for generating metainfo
       * build-related info and source code-related

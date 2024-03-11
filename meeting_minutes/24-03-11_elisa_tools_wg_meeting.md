@@ -58,8 +58,10 @@
 
 ## Agenda Items
 
-* Review README.md updates. Additions?
+### Current Topics
+
 * BASIL topics
+  * Very close on public instance?
 * ks-nav topics
 * Static Analysis in Open Source SW
   * Continuation on of mixed static/dynamic analysis discussion
@@ -67,6 +69,9 @@
     * Do we (and if so how?) reconcile OSS coding standards with Certification coding standards
   * How can we contribute?
     * Contribute to clang-tidy / clang-format?
+
+### Next Topics
+
 * Kernel testing
   * Can we contribute to kernel testing in a systematic way?
   * Translating runtime test to kunit tests
@@ -85,7 +90,7 @@
 
 ## Discussion Notes
 
-* BASIL 
+* BASIL
 * ks-nav
 * Topics for the Workshop in June
 

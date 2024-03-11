@@ -18,16 +18,26 @@ For more information, contact the working group chair, [Matt Kelly](mailto:matt.
 
 ## Our Work
 
-## Kernel Static Analysis
+### Kernel Static Analysis
 
 * CodeChecker Instance: [https://elisa-builder-00.iol.unh.edu:8001/](https://elisa-builder-00.iol.unh.edu:8001/)
+* Syzkaller Instance: [https://elisa-builder-00.iol.unh.edu/syzkaller/](https://elisa-builder-00.iol.unh.edu/syzkaller/)
+* Syzkaller-next Instance: [https://elisa-builder-00.iol.unh.edu/syzkaller/](https://elisa-builder-00.iol.unh.edu/syzkaller/)
 
-## Tools
+### Tools
 
 * [ks-nav](https://github.com/elisa-tech/ks-nav)
   * Toolset designed to assist developers and engineers in analyzing kernel source code, understanding function call trees, and generating informative diagrams.
 * [BASIL](https://github.com/elisa-tech/BASIL)
   * Tool developed to support software specification analysis and testable requirements definition.
+
+### ELISA CIs
+
+* [ELISA Automotive WG meta-elisa CI](https://gitlab.com/elisa-tech/meta-elisa-ci)
+  * Yocto build of AGL profile for Automotive WG
+* [ELISA Automotive OpenQA CI](https://openqa.qa.codethink.co.uk/tests/6312)
+  * Verification test of Automotive CI products via OpenQA
+* [ELISA System WG CI](https://gitlab.com/elisa-tech/systems-wg-ci)
 
 ## External Links
 

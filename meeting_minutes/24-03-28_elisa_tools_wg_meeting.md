@@ -3,7 +3,7 @@
 
 # ELISA Tool Investigation & Code Improvement Working Group
 
-## Date: 23-03-11
+## Date: 23-03-28
 
 ## Agenda
 
@@ -21,14 +21,14 @@
 ### Attended this meeting
 
 * Matt Kelly (Boeing)
+* Alessandro Carminati (Red Hat)
+* Luigi Pellecchia (Red Hat)
+* Matt Weber (Boeing)
 
 ### Attended in the past
 
-* Alessandro Carminati (Red Hat)
-* Luigi Pellecchia (Red Hat)
 * Shefali Sharma
 * Sudip Mukherjee (CodeThink)
-* Matt Weber (Boeing)
 * Lukas Bulwahn (Elektrobit Automotive)
 * Roberto Bagnara (Bugseng)
 * Phillip Ahmann (Bosch)
@@ -52,9 +52,11 @@
 
 ### Upcoming Conferences
 
-* 27 Feb 2024 [AvioSE'24](https://aviose-workshop.github.io/) in Linz, Austria
 * 16-18 April 2024 Open Source North America in Seattle, Washington
 * June DevConf Czech Republic
+* Open Source Summit Europe (Vienna, Austria)
+* Open Source Summit Japan
+* Linux Plumbers Conference (Vienna, Austria)
 
 ## Agenda Items
 
@@ -63,6 +65,8 @@
 * BASIL topics
   * Very close on public instance?
 * ks-nav topics
+* Topics for the June Workshop
+* Boeing/UIUC llvm-cov
 * Static Analysis in Open Source SW
   * Continuation on of mixed static/dynamic analysis discussion
   * How should we approach it?
@@ -90,9 +94,34 @@
 
 ## Discussion Notes
 
-* BASIL
 * ks-nav
+  * AC: One need was to highlight the global symbols
+    * Just added via this commit: https://github.com/elisa-tech/ks-nav/compare/main...alessandrocarminati:ks-nav:main
+    * The commit creates the data and populates the database
+    * AC showed a demo of the data that is generated: https://pastebin.com/B6R855ik 
+      * For a single function is shows all global variables uses with line and memory address
+      * Then boils this down to a simple list
+      * Still working on the visualization pieces for this data
+* BASIL
+  * Working on the authentication is still on-going
+    * Still working on reverse proxy with nginx with Sudip
+    * nginx routing is clashing with the React router
+  * Added a layer of abstraction to test cases so they can describe any test
+  * BASIL will provide a test environment as a Fedora container
+* llvm-cov
+  * Boeing working with University of Illinois (UIUC) on enhancing llvm-cov to support MC/DC on the kernel
+    * MC/DC was implemented in llvm by Alan Phipps @ Texas Instruments
+    * UIUC helped find and fix several bugs and improved reporting
+    * Kernel requires PGO patch from Google/Meta
+    * UIUC team updated this patch is going to resubmit to upstream (it's been previously rejected)
+  * MC/DC
+    * A method to show you've covered all important cases in a multi-art conditional
+    * https://en.wikipedia.org/wiki/Modified_condition/decision_coverage
 * Topics for the Workshop in June
+  * MK will probably give a Tools WG update
+  * MK considering adding a topic around llvm-cov/kernel testing
+  * AC volunteered to present on ks-nav and LFSCS
+  * LP is unfortunately on vacation
 
 ## Round Table
 

@@ -21,13 +21,14 @@
 ### Attended this meeting
 
 * Matt Kelly (Boeing)
+* Shefali Sharma
+* Matt Weber (Boeing)
+* Youssef Hajjiouri (Hurn3t S3c)
 
 ### Attended in the past
 
 * Alessandro Carminati (Red Hat)
 * Luigi Pellecchia (Red Hat)
-* Matt Weber (Boeing)
-* Shefali Sharma
 * Sudip Mukherjee (CodeThink)
 * Lukas Bulwahn (Elektrobit Automotive)
 * Roberto Bagnara (Bugseng)
@@ -57,8 +58,8 @@
 * 29-2 July-Aug, AIAA Aviation Aviation Forum (Las Vegas, USA)
 * 13-15 June, DevConf Czech Republic (Brno, Czech Republic)
 * 16-18 Sept, Open Source Summit Europe (Vienna, Austria)
-* 28-29 Oct, Open Source Summit Japan (Tokyo, Japan)
 * 18-20 Sept, Linux Plumbers Conference (Vienna, Austria)
+* 28-29 Oct, Open Source Summit Japan (Tokyo, Japan)
 
 ## Agenda Items
 
@@ -66,14 +67,15 @@
 
 * Announcements
   * June workshop [schedule](https://elisa.tech/event/elisa-workshop-lund/)
-* Boeing/UIUC llvm-cov
-  * Making Linux Fly: Towards Certified Linux Kernel (5/22/24 @ 7:00 Pacific / 14:00 UTC)
 * ks-nav topics
   * Boeing has ks-nav setup for kernel 6.6!
+  * MR for new features!
 * BASIL topics
   * Public instance status
   * EOSS Report?
   * Further Xen Interaction?
+* Boeing/UIUC llvm-cov
+  * Making Linux Fly: Towards Certified Linux Kernel (5/22/24 @ 7:00 Pacific / 14:00 UTC)
 * Static Analysis in Open Source SW
   * Continuation on of mixed static/dynamic analysis discussion
   * How should we approach it?
@@ -103,6 +105,9 @@
 
 * Boeing/UIUC llvm-cov
 * ks-nav
+  * Matt W. working with another engineer to setup scanning a custom kernel version
+    * Found a few bugs that have been worked out
+    * Going to do some MRs to add additional documentation for new users
 * BASIL
 
 ## Round Table

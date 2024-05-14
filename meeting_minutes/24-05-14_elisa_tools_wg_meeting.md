@@ -3,7 +3,7 @@
 
 # ELISA Tool Investigation & Code Improvement Working Group
 
-## Date: 24-04-25
+## Date: 24-05-14
 
 ## Agenda
 
@@ -21,14 +21,14 @@
 ### Attended this meeting
 
 * Matt Kelly (Boeing)
+* Luigi Pellecchia (Red Hat)
+* Alessandro Carminati (Red Hat)
+* Shefali Sharma
 
 ### Attended in the past
 
-* Shefali Sharma
 * Matt Weber (Boeing)
 * Youssef Hajjiouri (Hurn3t S3c)
-* Alessandro Carminati (Red Hat)
-* Luigi Pellecchia (Red Hat)
 * Sudip Mukherjee (CodeThink)
 * Lukas Bulwahn (Elektrobit Automotive)
 * Roberto Bagnara (Bugseng)
@@ -102,6 +102,44 @@
   * How do we engage on peoples *actual* daily problems?
 
 ## Discussion Notes
+
+* BASIL
+  * Public instance
+    * Continuing to work on getting the ports opened correctly
+    * Luigi setup VM that Sudip provisioned by cannot hit the ports
+  * EOSS
+    * About ~20 people in the room for the presentation
+    * Kate was also presenting the keynote to ~200 people!
+    * Available on YouTube [here](https://www.youtube.com/watch?v=1xmcpco14nE)
+    * Looking to continue the discussion in Vienna in Sept.
+    * LinkedIn video demo [here](https://www.linkedin.com/posts/luigi-pellecchia_how-basil-can-help-linux-test-project-to-activity-7186248090129956864-d-vC)
+      * Shows how we can track to upstream test and improve the man pages
+      * Also started a conversation on the ltp mailing list
+        * Thread: Re: [LTP] Identify current test coverage and clarify contribution opportunities
+        * The response was interesting
+        * In part, they didn't want additional work to do the mapping between man page page
+        * Mapping helps identify gaps
+  * SDPX as a data exchange format
+    * Data can be exported to SPDX but doesn't cover test results
+    * Import feature is not ready
+    * The catch with SDPX is that even though you can export to SPDX it can be exported in a non-standard way
+    * Custom fields are kind of key/value but maybe
+  * Xen selected another tool (OpenTrace??)
+    * Stefano provided some rationale in his [EOSS talk](https://www.youtube.com/watch?v=uuBhqwbaObE)
+    * Most data is stored in the git repo
+* ks-nav
+  * Alessandro: still working on the global symbols
+    * Extraction work is done, but need to find a way to present the data in an effective way
+    * Currently only static drawings which are quite commplicated
+    * Looking to create something interactive
+  * Matt W and Jeannette N. (@Boeing) are getting ks-nav setup.
+    * May upstream a setup fix or two.
+* syzkaller
+  * Alessandro explored skykaller in a personal blog [post](https://carminatialessandro.blogspot.com/2024/05/navigating-syzkaller-experience-bug.html)
+  * Do we want to talk about it this group?
+  * Matt K: We have previously talked about it in this group, but lately interest has been elsewhere
+  * Matt K: Related discussion coding standard discussion
+    * How do we approach coding standards in an open source collaboration?
 
 ## Round Table
 

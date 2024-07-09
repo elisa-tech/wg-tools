@@ -20,17 +20,17 @@
 
 ### Attended this meeting
 
+* Matt Kelly (Boeing)
+* Yizhen Zhang (Boeing)
+* Matt Weber (Boeing)
+* Muhammad Qasim (Seimens)
+
 ### Attended in the past
 
-* Matt Kelly (Boeing)
 * Luigi Pellecchia (Red Hat)
 * Jeannette N. (Boeing)
-* Matt Weber (Boeing)
 * Shefali Sharma (Nextleap Aeronautics)
-* Yizhen Zhang (Boeing)
-* Alessandro Carminati (Red Hat)
 * Sudip Mukherjee (CodeThink)
-* Muhammad Qasim (Seimens)
 * Youssef Hajjiouri (Hurn3t S3c)
 * Lukas Bulwahn (Elektrobit Automotive)
 * Roberto Bagnara (Bugseng)
@@ -65,7 +65,7 @@
 ### Current Topics
 
 * Announcements
-  * Plug stress-ng talk & short dicussion
+  * Plug stress-ng talk & short discussion
 * Kernel Change Impact Tooling
   * Patch cover letter and demo tooling
 * ks-nav topics
@@ -98,11 +98,43 @@
 
 ## Discussion Notes
 
+* ks-nav/Kernel Change Impact Analysis Overlap
+  * MW: What would a good first step be?
+  * MW: Comparison of what the change impact tool believes at source time vs. what actually ends up in the build?
+  * MW: Filtering functions at a file level of what is activated
+    * Use the binary to filter the functions
+    * MK: Could also use the "post pre-processed" source (`-E` compiler flag)
+  * MK: Could we use the "post pre-processed" source to allow hover over of the functions?
+  * MK: Python used for the kernel change impact analysis?
+    * YZ: Python + Bash
+    * Python does the tokenization of metadata
+  * ks-nav is mostly Go
+  * MW: What visualizations are you think for the comparisons of two binary versions?
+    * AC: Was thinking of something that was not a visualization
+    * AC: Only attempting to provide the impact of a particular patch
+  * AC: We could use the .dot files to look at the differences between tags
+  * MW: If I build a superset function list, can I compare that to what is built via ks-nav?
+    * AC: ks-nav is not aware of the config it just works on the binary
+  * MW: Can I just get a global function list
+    * AC: Yes
+  * ks-nav is really designed to create the call tree, but all the data is there
+  * MW: So if  wanted to contribute a version of the tool and integrate it with that database it would fit the model
+    * Yes
+* MK: stress-ng has a lot of API testing functionality (in addition to the things we normally think of)
+  * Can we use this as the basis of adding kernel testing
+  * Kate specifically asked Colin if we could formalized the testing
+  * He sounded open to at least discussing it
+* AC: Gave a presentation at the SOAFEE (automotive consortium) forum
+  * Talk seemingly went well and we gained a bit of interest
+  * Past presentations got basically no interaction
+  * ks-nav presentation there was actually some relevant questions
+* QM: Patch that was sent to the mailing list has already been accepted by kernel community
+
 ## Round Table
 
 ## Action Items
 
-* [ ] Matt/Matt/Jeannette: Talk about possible addition of complexity metrics
+* [ ] Matt K/Matt W/Jeannette: Talk about possible addition of complexity metrics
 * [ ] Jeanette: Add notes to documentation setup
 * [ ] Matt/WG: Understand how we can engage Vertical Groups (Automotive, etc.) so we have real examples of how to use tools
 * [ ] Matt: Bring up engagement (present to vertical groups? blog post? presenting November summary meeting) at the TSC

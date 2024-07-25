@@ -3,7 +3,7 @@
 
 # ELISA Tool Investigation & Code Improvement Working Group
 
-## Date: 24-07-09
+## Date: 24-07-25
 
 ## Agenda
 
@@ -21,16 +21,16 @@
 ### Attended this meeting
 
 * Matt Kelly (Boeing)
-* Yizhen Zhang (Boeing)
-* Matt Weber (Boeing)
+* Steve VanderLeest (Boeing)
+* Shefali Sharma (Nextleap Aeronautics)
 * Muhammad Qasim (Seimens)
-* Alessandro Carminati (Red Hat)
-  
+
 ### Attended in the past
 
+* Yizhen Zhang (Boeing)
+* Matt Weber (Boeing)
 * Luigi Pellecchia (Red Hat)
 * Jeannette N. (Boeing)
-* Shefali Sharma (Nextleap Aeronautics)
 * Sudip Mukherjee (CodeThink)
 * Youssef Hajjiouri (Hurn3t S3c)
 * Lukas Bulwahn (Elektrobit Automotive)
@@ -55,7 +55,6 @@
 
 ### Upcoming Conferences
 
-* 13-15 June, DevConf Czech Republic (Brno, Czech Republic)
 * 16-18 Sept, Open Source Summit Europe (Vienna, Austria)
 * 18-20 Sept, Linux Plumbers Conference (Vienna, Austria)
   * Safety Critical Microconference
@@ -66,18 +65,19 @@
 ### Current Topics
 
 * Announcements
-  * Plug stress-ng talk & short discussion
-* Kernel Change Impact Tooling
-  * Patch cover letter and demo tooling
+  * cregit discussion
 * ks-nav topics
 * BASIL topics
+* DeltaKernel topics
+  * MR for Initial Work: https://github.com/elisa-tech/delta-kernel/pull/1
+* stress-ng Investigation
 * Boeing/UIUC llvm-cov
-* Static Analysis in Open Source SW
+* Static Analysis in Open-Source SW
   * Continuation on of mixed static/dynamic analysis discussion
   * How should we approach it?
-    * Do we (and if so how?) reconcile OSS coding standards with Certification coding standards
+  * Do we (and if so how?) reconcile OSS coding standards with Certification coding standards
   * How can we contribute?
-    * Contribute to clang-tidy / clang-format?
+  * Contribute to clang-tidy / clang-format??
 
 ### Next Topics
 
@@ -99,37 +99,20 @@
 
 ## Discussion Notes
 
-* ks-nav/Kernel Change Impact Analysis Overlap
-  * MW: What would a good first step be?
-  * MW: Comparison of what the change impact tool believes at source time vs. what actually ends up in the build?
-  * MW: Filtering functions at a file level of what is activated
-    * Use the binary to filter the functions
-    * MK: Could also use the "post pre-processed" source (`-E` compiler flag)
-  * MK: Could we use the "post pre-processed" source to allow hover over of the functions?
-  * MK: Python used for the kernel change impact analysis?
-    * YZ: Python + Bash
-    * Python does the tokenization of metadata
-  * ks-nav is mostly Go
-  * MW: What visualizations are you think for the comparisons of two binary versions?
-    * AC: Was thinking of something that was not a visualization
-    * AC: Only attempting to provide the impact of a particular patch
-  * AC: We could use the .dot files to look at the differences between tags
-  * MW: If I build a superset function list, can I compare that to what is built via ks-nav?
-    * AC: ks-nav is not aware of the config it just works on the binary
-  * MW: Can I just get a global function list
-    * AC: Yes
-  * ks-nav is really designed to create the call tree, but all the data is there
-  * MW: So if  wanted to contribute a version of the tool and integrate it with that database it would fit the model
-    * Yes
-* MK: stress-ng has a lot of API testing functionality (in addition to the things we normally think of)
-  * Can we use this as the basis of adding kernel testing
-  * Kate specifically asked Colin if we could formalized the testing
-  * He sounded open to at least discussing it
-* AC: Gave a presentation at the SOAFEE (automotive consortium) forum
-  * Talk seemingly went well and we gained a bit of interest
-  * Past presentations got basically no interaction
-  * ks-nav presentation there was actually some relevant questions
-* QM: Patch that was sent to the mailing list has already been accepted by kernel community
+* Discussion on cregit 
+  * MK: Meeting with Kate Stewart & cregit author to discuss moving the tool under this group
+  * SV: Even just having a list of the tools is a useful exercise
+  * SV: This could help us identify the gaps we have in delivering the right development assurance
+* DeltaKernel
+  * MK: Initial MR is out (link above)
+  * MK: Would be good to get feedback on usage to draw out assumptions  didn't realize she made
+* ks-nav
+  * JN has an MR out to add a tutorial for new users of ks-nav
+    * Changes in fork here for review: https://github.com/dnjean/ks-nav/tree/demo-upload
+* QM: Is the group still working on submitting kernel pathces
+  * MK: Yes, still consider it part of the work scope but attendees haven't been as focused on it recently
+  * MK: A few of the more active kernel patching folks haven't been attending recently but are still engaged
+  * MK: Post to the mailing and you should get responses from them!
 
 ## Round Table
 

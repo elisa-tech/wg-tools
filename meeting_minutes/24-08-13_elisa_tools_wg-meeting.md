@@ -3,7 +3,7 @@
 
 # ELISA Tool Investigation & Code Improvement Working Group
 
-## Date: 24-07-25
+## Date: 24-08-12
 
 ## Agenda
 
@@ -21,17 +21,16 @@
 ### Attended this meeting
 
 * Matt Kelly (Boeing)
-* Steve VanderLeest (Boeing)
+* Luigi Pellecchia (Red Hat)
 * Shefali Sharma (Nextleap Aeronautics)
-* Muhammad Qasim (Seimens)
+* Matt Weber (Boeing)
+* Sudip Mukherjee (CodeThink)
+* Jeannette N. (Boeing)
 
 ### Attended in the past
 
-* Yizhen Zhang (Boeing)
-* Matt Weber (Boeing)
-* Luigi Pellecchia (Red Hat)
-* Jeannette N. (Boeing)
-* Sudip Mukherjee (CodeThink)
+* Steve VanderLeest (Boeing)
+* Muhammad Qasim (Seimens)
 * Youssef Hajjiouri (Hurn3t S3c)
 * Lukas Bulwahn (Elektrobit Automotive)
 * Roberto Bagnara (Bugseng)
@@ -65,8 +64,10 @@
 ### Current Topics
 
 * Announcements
-  * cregit discussion
+  * cregit Webinar
+  * 9/10 instance of this meeting will cancelled
 * ks-nav topics
+  * MR for documentation: https://github.com/dnjean/ks-nav/tree/demo-upload
 * BASIL topics
 * DeltaKernel topics
   * MR for Initial Work: https://github.com/elisa-tech/delta-kernel/pull/1
@@ -99,27 +100,53 @@
 
 ## Discussion Notes
 
-* Discussion on cregit 
-  * MK: Meeting with Kate Stewart & cregit author to discuss moving the tool under this group
-  * SV: Even just having a list of the tools is a useful exercise
-  * SV: This could help us identify the gaps we have in delivering the right development assurance
-* DeltaKernel
-  * MK: Initial MR is out (link above)
-  * MK: Would be good to get feedback on usage to draw out assumptions didn't realize she made
-* ks-nav
-  * JN has an MR out to add a tutorial for new users of ks-nav
-    * Changes in fork here for review: https://github.com/dnjean/ks-nav/tree/demo-upload
-* QM: Is the group still working on submitting kernel pathces
-  * MK: Yes, still consider it part of the work scope but attendees haven't been as focused on it recently
-  * MK: A few of the more active kernel patching folks haven't been attending recently but are still engaged
-  * MK: Post to the mailing and you should get responses from them!
+* Announcements
+  * September 10th instance of the meeting will be cancelled
+* Conferences Discussion
+  * Lots of relevant talks and discussions coming up!
+  * 16-18 Sept [OSS Europe](https://events.linuxfoundation.org/open-source-summit-europe/) - Sessions to be published
+    * [Linux in Space: Fault Detection, Recovery and Fault-Tolerant System Designs - Lenka Kosková Třísková & Lukas Mazl, Technical University of Liberec & Tomas Novotny, VZLU](https://sched.co/1ej1t)
+  * 16-18 Spet [Linux Plumbers Conference]
+    * Luigi's Talks
+        * [BASIL The FuSa Spice to spot gaps in kernel testing and more](https://lpc.events/event/18/contributions/1736/)
+        * [BASIL development roadmap ](https://lpc.events/event/18/contributions/1898/)
+    * Alessandro's Talks
+      * [ks-nav](https://lpc.events/event/18/contributions/1900/)
+      * [Integrating kas-alias into kernel build: Overcoming Challenges with Non-Invasive Modifications](https://lpc.events/event/18/contributions/1830/)
+      * [Addressing Duplicated Symbol Names in kallsyms: Introducing kas_alias for Symbol Differentiation](https://lpc.events/event/18/contributions/1730/)
+    * UIUC Team on llvm-cov
+      * [Measuring and Understanding Linux Kernel Tests](https://lpc.events/event/18/contributions/1793/)
+    * Other Relevant Talks
+      * [Building for Safety in a Security and Feature Focused World](https://lpc.events/event/18/contributions/1745/)
+      * [Safe Systems with Linux - Micro Conference](https://lpc.events/event/18/contributions/1663/) [Topics](https://lpc.events/event/18/sessions/187/#20240920)
+* LP: Could use help with mapping existing testing to system calls in our public instance of BASIL
+  * This will be used in a presentation to demonstrate gaps in the current Linux kernel testing
+  * Trying to leverage this to get more folks from Linux Test Project (LTP) involved
+  * MK: stress-ng could be another potential source of testing for Luigi's talk for existing kernel testing
+* ks-nav Topics
+  * ks-nav MR
+    * JN: Added more details to the current GitHub documentation in the form of a demo
+    * Also some typo fixes
+    * Demo includes the scripting approach and GUI usage
+    * Forming them into patches that can submitted to the main ks-nav repo
+* BASIL Topics
+  * MK: What version of SDPX is BASIL using?
+    * LP: Currently using SDPX 3.0
+    * MK: Curious because Yocto seems way behind (2.2) but patches for 3.0 are coming
+    * Interested to see what kind of connections we can make between Yocto SBOM and BASIL data
+* DeltaKernel Topics
+    * MR for Initial Work: https://github.com/elisa-tech/delta-kernel/pull/1
+    * Lots of comments but we need to push it through as Yizhen's internship has ended
+    * Matt W. to take a look at thread closure
+    * MW: Interested in people who want to add the object analysis into the tool
 
 ## Round Table
 
 ## Action Items
 
+* [ ] Matt: Investigation leveraging stress-ng (send example for LP's talk) 
 * [ ] Matt K/Matt W/Jeannette: Talk about possible addition of complexity metrics
-* [ ] Jeanette: Add notes to documentation setup
+* [x] Jeanette: Add notes to documentation setup
 * [ ] Matt/WG: Understand how we can engage Vertical Groups (Automotive, etc.) so we have real examples of how to use tools
 * [ ] Matt: Bring up engagement (present to vertical groups? blog post? presenting November summary meeting) at the TSC
 * [ ] Matt: Contact Sudip/Lukas to pull together documentation on patch submission

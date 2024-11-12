@@ -3,7 +3,7 @@
 
 # ELISA Tool Investigation & Code Improvement Working Group
 
-## Date: 24-10-24
+## Date: 24-11-12
 
 ## Agenda
 
@@ -21,15 +21,15 @@
 ### Attended this meeting
 
 * Matt Kelly (Boeing)
-
+* Luigi Pellecchia (Red Hat)
+* Matt Weber (Boeing)
+* Chuck Wolber (Boeing)
+  
 ### Attended in the past
 
 * Sudip Mukherjee (CodeThink)
 * Alessandro Carminati (Red Hat)
-* Luigi Pellecchia (Red Hat)
-* Chuck Wolber (Boeing)
 * Jeannette N. (Boeing)
-* Matt Weber (Boeing)
 * Shefali Sharma (Nextleap Aeronautics)
 * Jeannette N. (Boeing)
 * Steve VanderLeest (Boeing)
@@ -99,11 +99,46 @@
 ## Discussion Notes
 
 * Announcements
-* December Workshop Discusssion
+  * Nov. 28th instance of this meeting cancelled (US Thanksgiving)
+* December Workshop Discussion (https://elisa.tech/event/elisa-workshop-at-nasa-goddard-space-grade-linux/)
+  * Matt W and Matt K can't go due to business environment
+  * CW: The requirements topic is on the agenda
+  * Luigi is giving a talk about BASIL improvements
+    * Link work items tests that are external to BASIL itself
+    * Focus initially will be on Kernel CI (but also possibly GitHub CI, etc.)
+    * Proposing another talk about ks-nav, using ks-nav in combination another tool to identify if a path has been executed
+  * There are a some talks from NASA folks that might be only one time
+    * Hope is that some will be redone via Webinars (they won't be recorded and posted)
+* Requirements Topic
+  * LG: Is the requirements discussion the same on the Gabrielle is involved in?
+  * CW: Yes, it's quite the mashup of a conversation
+    * Coming with an proposal to the workshop
 * ks-nav Topics
 * BASIL Topics
+  * Nothing particularly new this week
+  * Just the effort going on to link external test results
 * DeltaKernel Topics
+  * This effort is on hold for the moment.
+  * Likely won't be picked up until next year.
+  * CW: Is it open for contribution?
+    * MW: Sure
+  * MK: Is there enough documentation for people to contribute?
+    * MW: It's good enough
+  * MW: How do we get toward binary analysis with this tool?
+  * MW: Kconfig tool could be useful in understand why code is remove with config options
 * KConfig Tools
+  * Showed off AC's tool
+  * https://github.com/alessandrocarminati/kconfig-
+* Other
+  * MW: Interesting note from Aerospace WG--really close to putting together a black box test
+    * Assembling NASA's copilot tool with emulated use case running test applications
+    * Creating pipelines in Aero WG CI
+    * Copilot might have some application to Tools WG
+    * Copilot formal verification tool
+      * https://copilot-language.github.io/
+    * Copilot watches traffic / tracepoints and verifies they are in-bounds
+  * MW: Think Copilot will be a big topic for space groups going forward given the tool stacks they want to use
+  * Test setup running in an Ubuntu container
 
 ## Round Table
 

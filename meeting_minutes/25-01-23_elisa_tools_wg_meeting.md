@@ -3,7 +3,7 @@
 
 # ELISA Tool Investigation & Code Improvement Working Group
 
-## Date: 24-01-14
+## Date: 25-01-23
 
 ## Agenda
 
@@ -26,6 +26,7 @@
 * Andrew Oppelt (Boeing)
 * Roberto Bagnara (Bugseng)
 * Muhammad Qasim (Seimens)
+* Luigi Pellecchia (Red Hat)
   
 ### Attended in the past
 

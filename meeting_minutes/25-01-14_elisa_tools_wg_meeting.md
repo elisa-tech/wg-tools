@@ -21,14 +21,15 @@
 ### Attended this meeting
 
 * Matt Kelly (Boeing)
+* Matt Weber (Boeing)
+* Carole Garrison (NASA Langley)
+* Sudip Mukherjee (CodeThink)
+* Luigi Pellecchia (Red Hat)
+* Alessandro Carminati (Red Hat)
   
 ### Attended in the past
 
-* Luigi Pellecchia (Red Hat)
-* Matt Weber (Boeing)
 * Chuck Wolber (Boeing)
-* Sudip Mukherjee (CodeThink)
-* Alessandro Carminati (Red Hat)
 * Jeannette N. (Boeing)
 * Shefali Sharma (Nextleap Aeronautics)
 * Jeannette N. (Boeing)
@@ -94,12 +95,58 @@
 ## Discussion Notes
 
 * Announcements
-* December Workshop Discussion (https://elisa.tech/event/elisa-workshop-at-nasa-goddard-space-grade-linux/)
-* ks-nav Topics
-* BASIL Topics
-* DeltaKernel Topics
-* KConfig Tools
-* Other
+  * Matt will be on leave at some point this year
+    * 
+    * Luigi volunteered to run the meetings
+* December Workshop Discussion
+  * LP: Was there in person and everything was awesome
+    * Presented new features in BASIL tieing test cases to req spec, etc.
+    * Tracing and triggering to test in external test infrastructures
+    * Supports GitLab CI, GitHub Actions, KernelCI
+    * Can't trigger on KernelCI but can in other cases
+    * Talk: https://www.youtube.com/watch?v=laCsZ3DusEc&pp=ygUOYmFzaWwga2VybmVsY2k%3D
+  * MW: Chuck is envisioning to see the commit change trigger only specific test which they are tied
+    * MW: Chuck isn't quite there yet, they are currently focused on the format
+    * LP: As long as there is a test case tied to the req, there is an API we can use to show what is tied to that requirement and trigger tests
+  * MK: How does does the kernel requirements conversation tie in with BASIL?
+    * LP: We'll likely need to collect additional requirements fields outside of the source code
+    * LP: If we want to create traceability to other artifacts we'll use BASIL
+    * LP: BASIL already supports creating requirements from something in a file
+  * LP: When requirements change, we need to reflect that in BASIL in 
+  * LP: First req, going into the ftrace area (which Steve R. maintains)
+    * https://github.com/torvalds/linux/blob/master/kernel/trace/ftrace.c
+  * MK: Does ftrace already have testing in place that we could leverage?
+    * https://github.com/torvalds/linux/tree/master/tools/testing/selftests/ftrace
+  * MW: Nathan (llvm-kernel maintainer) was interested in getting the kernel data published
+  * LP: We can try to setup the CI action before the requirement goes in
+  * MW: Space Grade Linux Group has split out to have their own call (first call this Thursday)
+    * Ramon/Ivan are co-leading that SIG
+    * Initially focused on established a `meta-sgl` and rallying around delivering frameworks
+      * Frameworks like fPrime, CFS, etc.
+    * Less concerned about artifacts right
+    * Will probably be reaching out to Sudip for CI for sgl
+  * MW: Do we have more computer beyond the "free OSS project" limit for GitHub?
+  * MW: Is this the actions workflow that is being used?
+    * https://github.com/elisa-tech/BASIL/blob/main/.github/workflows/build.yaml
+  * Sudip: We run a build in GitLab, GitHub actions will pull from the cache and therefore not require much computer
+    * https://github.com/elisa-tech/BASIL/actions/caches
+* 2025 Objectives
+  * What should they be?
+    * Req -> Test Case -> KernelCI Result -> llvm-cov coverage
+      * Show a requirement (from the kernel design doc discussion) tied to a test cases
+      * Tied to a KernelCI result, showing test coverage from llvm-cov
+    * Setup CI which scraps latest kernel for requirements?
+* ks-nav topics
+  * MR for documentation: https://github.com/dnjean/ks-nav/tree/demo-upload
+  * LP: Presented a workflow where ks-nav is integrated with ftrace to investigate critical paths in the source code that you can't easily understand with just the code coverage.
+    * This was presetned on the first day, but AC has a recording of a practice run
+    * https://youtu.be/YP8Eu0KzYv4
+* BASIL topics
+  * LP presenting at FOSDEM as part of the SBOM track
+  * Would like to talk about this SBOM part next week
+* DeltaKernel topics
+* stress-ng Investigation
+* Boeing/UIUC llvm-cov
 
 ## Round Table
 

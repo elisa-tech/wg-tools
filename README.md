@@ -30,6 +30,9 @@ For more information, contact the working group chair, [Matt Kelly](mailto:matt.
   * Toolset designed to assist developers and engineers in analyzing kernel source code, understanding function call trees, and generating informative diagrams.
 * [BASIL](https://github.com/elisa-tech/BASIL)
   * Tool developed to support software specification analysis and testable requirements definition.
+  * Live Demo Instance: http://elisa-builder-00.iol.unh.edu:9056/ 
+* [DeltaKernel](https://github.com/elisa-tech/delta-kernel/)
+  * Kernel change impact analysis tool which creates visualization of kernel differences between versions
 
 ### ELISA CIs
 

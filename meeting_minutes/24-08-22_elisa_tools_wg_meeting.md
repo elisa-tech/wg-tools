@@ -109,7 +109,7 @@
 * BASIL Topics
 * DeltaKernel Topics
   * Merged PR#3 so the code is now on main
-  * A few standing tickets 
+  * A few standing tickets
     * Decoupling it from a user's checkout of linux
     * kconfig analysis gap
 * Base configuration Discussion
@@ -148,7 +148,7 @@
         select ARCH_ENABLE_MEMORY_HOTREMOVE 
     ```
 
-  * AC: Another note, when you use a particular item, if any of the downstream dependencies are later disabled. That item will be removed. 
+  * AC: Another note, when you use a particular item, if any of the downstream dependencies are later disabled. That item will be removed.
   * MW: Arch default is select flags that change common code behavior downstream
     * Some options simply include or exclude code
     * Some options change the behavior of certain code
@@ -168,7 +168,6 @@
   * MW: There may be some work coming from the Space Grade Linux SIGs
     * There is going to be a survey to help define the groups themselves
     * Going out to ESA, NASA, LibreSpace, linux4space
-
 
 ## Round Table
 

@@ -106,10 +106,10 @@
   * Lots of relevant talks and discussions coming up!
   * 16-18 Sept [OSS Europe](https://events.linuxfoundation.org/open-source-summit-europe/) - Sessions to be published
     * [Linux in Space: Fault Detection, Recovery and Fault-Tolerant System Designs - Lenka Kosková Třísková & Lukas Mazl, Technical University of Liberec & Tomas Novotny, VZLU](https://sched.co/1ej1t)
-  * 16-18 Spet [Linux Plumbers Conference]
+  * 16-18 Sept [Linux Plumbers Conference]
     * Luigi's Talks
-        * [BASIL The FuSa Spice to spot gaps in kernel testing and more](https://lpc.events/event/18/contributions/1736/)
-        * [BASIL development roadmap ](https://lpc.events/event/18/contributions/1898/)
+      * [BASIL The FuSa Spice to spot gaps in kernel testing and more](https://lpc.events/event/18/contributions/1736/)
+      * [BASIL development roadmap](https://lpc.events/event/18/contributions/1898/)
     * Alessandro's Talks
       * [ks-nav](https://lpc.events/event/18/contributions/1900/)
       * [Integrating kas-alias into kernel build: Overcoming Challenges with Non-Invasive Modifications](https://lpc.events/event/18/contributions/1830/)
@@ -135,10 +135,10 @@
     * MK: Curious because Yocto seems way behind (2.2) but patches for 3.0 are coming
     * Interested to see what kind of connections we can make between Yocto SBOM and BASIL data
 * DeltaKernel Topics
-    * MR for Initial Work: https://github.com/elisa-tech/delta-kernel/pull/1
-    * Lots of comments but we need to push it through as Yizhen's internship has ended
-    * Matt W. to take a look at thread closure
-    * MW: Interested in people who want to add the object analysis into the tool
+  * MR for Initial Work: https://github.com/elisa-tech/delta-kernel/pull/1
+  * Lots of comments but we need to push it through as Yizhen's internship has ended
+  * Matt W. to take a look at thread closure
+  * MW: Interested in people who want to add the object analysis into the tool
 
 ## Round Table
 

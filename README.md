@@ -48,6 +48,10 @@ The Tools WG evaluates, designs, and implements tools that assist in enabling Li
 
   The Tools WG operates under the guidance of the ELISA Technical Steering Committee ([TSC](https://elisa.tech/about/tsc/)). It is headed by Luigi Pellecchia from Red Hat and co-hosted by Alessandro Carminati from NVIDIA.
 
+## Initiatives
+
+  To propose a new project or a change to an existing project, please file a pull request (PR) by adding a file to the initiatives folder. [Here](https://github.com/elisa-tech/wg-tools/blob/main/initiatives/README.md) you will find more details.
+
 ## External Links
 
 * [ELISA Home](https://elisa.tech/)
